@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Add_project"
+        android:orientation="vertical">
+    <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@mipmap/title_bar1"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="10dp">
+
+        <TextView
+                android:id="@+id/projects"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:text="ADD PROJECT"
+                android:textColor="#ffffff"
+                android:textSize="27dp"
+                android:textStyle="bold" />
+
+        <ImageView
+                android:id="@+id/home"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="onhome"
+                android:src="@mipmap/home1" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/field"
+            >
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:text="Project Details: "
+                android:textColor="@android:color/black"
+                android:id="@+id/inc"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvpname"
+                    android:text="Project Name: "
+                    android:textSize="18dp"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="10dp"/>
+
+
+            <EditText
+                    android:id="@+id/projectname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_weight="7"
+                    android:hint="Enter Project name"
+                    android:gravity="center"
+                    android:background="@layout/roundedet"
+                    android:name="name"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="9">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Project Description: "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="2"/>
+
+            <EditText
+                    android:id="@+id/projectdescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@layout/roundedet"
+                    android:gravity="center"
+                    android:hint="Enter project description"
+                    android:textSize="18dp"
+                    android:name="edt3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="9">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Project Duration: "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="2"/>
+
+            <EditText
+                    android:id="@+id/projectduration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@layout/roundedet"
+                    android:gravity="center"
+                    android:hint="Enter Project Duration"
+                    android:textSize="18dp"
+                    />
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@android:color/black"
+                android:id="@+id/hiddentv"
+                />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+            <Button
+                    android:id="@+id/btnsave"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#555"
+                    android:onClick="onSave"
+                    android:paddingLeft="5dp"
+                    android:text="Save"
+                    android:textColor="#FFF" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

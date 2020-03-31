@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PracticeDatabase"
+        android:orientation="vertical">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="Name:"
+                android:layout_width="166dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:textColor="@android:color/background_dark"
+                android:textColorHighlight="@color/colorAccent"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:textSize="25dp"
+                android:id="@+id/txtname"
+                android:layout_weight="1"
+                android:hint="Enter name"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="Age:"
+                android:layout_width="166dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:textColor="@android:color/background_dark"
+                android:textColorHighlight="@color/colorAccent"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:textSize="25dp"
+                android:id="@+id/txtage"
+                android:layout_weight="1"
+                android:hint="Enter Age"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:text="Insert"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btninsert"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/background_dark"/>
+        <Button
+                android:text="Update"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content" android:id="@+id/btnupdate" android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/background_dark"/>
+        <Button
+                android:text="Search"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content" android:id="@+id/btnsearch" android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/background_dark"/>
+        <Button
+                android:text="Delete"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content" android:id="@+id/btndelete" android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/background_dark"/>
+
+    </LinearLayout>
+    <Button
+            android:text="Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnreset"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/background_dark"/>
+</LinearLayout>

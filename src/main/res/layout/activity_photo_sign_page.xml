@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Photo_sign_page">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/title_bar1"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/options"
+                android:gravity="center"
+                android:text="Photo and Signature"
+                android:textColor="#ffffff"
+                android:textSize="27dp"
+                android:textStyle="bold"
+                android:layout_weight="9"/>
+
+        <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/home"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/home1"
+                android:onClick="onhome"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+        <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/pickimg"
+                android:id="@+id/imageview"
+                android:layout_marginTop="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/imageborder"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick image"
+                    android:id="@+id/pickimg"
+                    android:background="@android:color/black"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"/>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remove image"
+                    android:id="@+id/removeimg"
+                    android:background="@android:color/black"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+        <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/scansign"
+                android:id="@+id/imageview1"
+                android:layout_marginTop="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/imageborder"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan Signature"
+                android:id="@+id/scansign"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+    </LinearLayout>
+</LinearLayout>

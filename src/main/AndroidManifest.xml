@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.depstar.resumebuilder">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <application
+            android:name=".GlobalClass"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/logo"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".Show_interest"></activity>
+        <activity android:name=".Show_skills" />
+        <activity android:name=".Add_interest" />
+        <activity android:name=".Add_skills" />
+        <activity android:name=".Show_experience" />
+        <activity android:name=".Add_experience" />
+        <activity android:name=".Show_achievement" />
+        <activity android:name=".Add_achievement" />
+        <activity android:name=".Strength_hobby_page" />
+        <activity android:name=".Achievement_page" />
+        <activity android:name=".Objectives_page" />
+        <activity android:name=".Experience_page" />
+        <activity android:name=".Interest_page" />
+        <activity android:name=".Skills_page" />
+        <activity android:name=".Photo_sign_page" />
+        <activity android:name=".Education_page" />
+        <activity android:name=".Show_Education" />
+        <activity android:name=".Add_Education" />
+        <activity android:name=".Show_project" />
+        <activity android:name=".Add_project" />
+        <activity android:name=".MainPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".RecycleView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Project_page" />
+        <activity android:name=".Personal_info_page" />
+        <activity android:name=".Rate_page" />
+        <activity android:name=".Dashboard_page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Contact_page" />
+        <activity android:name=".Create_page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Basic_Details_page" />
+        <activity android:name=".PracticeDatabase">
+
+        </activity>
+    </application>
+
+</manifest>
